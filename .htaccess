@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteRule ^recipes/$ recipes/allrecipes.php 
+RewriteRule ^contact/$ contact.php
+RewriteRule ^upload/$ upload.php
+RewriteRule ^search/$ searchresults.php
+RewriteRule ^post/$ post.php
+RewriteRule ^inspiration/$ inspiration.php
+RewriteRule ^cookbook/$ cookbook.php
+RewriteRule ^about/$ about.php
+RewriteRule ^fruits-vegetables/$ fruits-vegetables.php
+
+RewriteRule ^recipes/([0-9]+)/$ post.php?id=$1
+
+RewriteRule ^/([a-z]+)$ $1/ [R=301]

@@ -1,0 +1,424 @@
+/******************************
+Name: FoodJumble CSS
+Author: Bethany Hernandez
+Company: Aria Web Services
+
+*** Colors ***
+#C2130C - strawberry red
+#750804 - darker red
+#FF3129 - link colors - pink
+#00752A - dark green
+#0CC24D - light green
+#E5DFC0 - div backgrounds
+#FFFCEF - background
+#989271 - border
+
+*** Fonts ***
+Calisto MT
+Acme (google)
+Ribeye Marrow (google)
+*******************************/
+
+
+/***** GENERAL STYLES *****/
+
+body {
+	/*background: url("../img/paper-4.png") repeat 0px fixed; */
+	background-color: #FFFCEF;
+	max-height:100%;
+	max-width:100%;
+	font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+}
+
+h1, h2, h3, h4{
+font-family: 'Acme', sans-serif;
+color: #fff;
+text-align: center;
+}
+
+.content-container h2{
+color: #C2130C;
+padding-top: 10px;
+}
+
+.img {
+border: 5px solid rgba(0, 117, 42, 0.75);
+}
+
+a:hover > .overlay {
+    background-color:#000;
+    opacity:0.6;
+}
+
+.content-container {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	clear: both;
+}
+
+.row{
+	min-width: 90%;
+	clear: both;
+}
+
+.border{
+	background-color: transparent;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 2px solid rgba(152, 146, 113, 0.7);
+}
+
+.inside-content{
+background: #E5DFC0;
+padding: 10px;
+}
+
+.active {
+background-color: #0CC24D;
+}
+
+.pagination{
+display: inline-block;
+float: right;
+position: relative;
+margin: auto;
+}
+
+.pagination > div{
+display: inline-block;
+float: left;
+background-color: #0CC24D;
+color: #fff;
+font-family: 'Acme', sans-serif;
+width: 25px;
+height: 25px;
+border: 2 px solid #00752A;
+margin: 5px;
+text-align: center;
+border-radius: 3px;
+padding-top: 5px;
+}
+
+.pagination div a {
+color: #fff;
+font-family: 'Acme', sans-serif;
+}
+
+.pagivation div span{
+margin: auto;
+}
+
+.pagination div:hover {
+background-color: #FF3129;
+}
+
+/***** HEADER *****/
+.header-container{
+background-color: rgba(194, 19, 12, 0.7);
+}
+
+#site-header {
+background-color: rgba(117, 8, 4, 0.7);
+font-family: 'Acme', sans-serif;
+padding: 10px;
+text-align: center;
+}
+
+#site-header > div {
+padding: 10px;
+display: inline-block;
+vertical-align: middle;
+}
+
+#site-header img{
+border: 0px;
+}
+
+#site-header  h1 {
+font-family: 'Ribeye Marrow', cursive;
+}
+
+.top-bar {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: transparent;
+}
+
+.top-bar-section ul{
+background: transparent;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button){
+background: transparent;
+font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+font-weight: bolder;
+}
+
+@media only screen and (min-width: 40.063em){
+	.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section .has-form  {
+		background: transparent;
+	}
+	.top-bar .button, .top-bar button {
+		margin-left: 5px;
+		background-color: #0CC24D;
+		
+	}
+	.top-bar-section li.active:not(.has-form) a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button):hover, .top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
+		background-color: #0CC24D;
+	}
+	.top-bar-section .dropdown li:not(.has-form) > a:not(.button), .top-bar-section li.hover:not(.has-form) a:not(.button) {
+		background-color: #750804;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.top-bar, .top-bar-section{
+		max-height: 100%;
+	}
+	.top-bar-section li{
+		display: inline-block;
+		overflow: auto;
+	}
+}
+
+.top-bar-section input[type="text"]{
+vertical-align: middle;
+margin: 0;
+padding: 0;
+height: 30px;
+}
+
+
+/**** FOOTER ****/
+
+.footer-container{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: #750804;
+	float: none;
+	clear: both;
+}
+
+.footer-container ul li{
+margin-top: 20px;
+position: relative;
+}
+
+.footer-container ul li a img{
+margin: 0 auto;
+position: relative;
+left: 0;
+right: 0;
+display: block;
+vertical-align: middle;
+}
+
+.footer-container ul li blockquote{
+border: 0;
+color: #333;
+}
+
+.footer-slider{
+height: 100%;
+}
+
+.footer-container .slide-item{
+background: #E5DFC0;
+}
+
+#footer-nav{
+text-align: left;
+}
+
+#copyright{
+text-align: center;
+color: #fff;
+font-family: 'Acme', sans-serif;
+}
+
+/***** HOME PAGE *****/
+#home-slider{
+text-align: center;
+margin-left: 0;
+}
+
+#home-slider .caption{
+margin-bottom: 10px;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+
+#home-slider .caption h4{
+color: #FF3129;
+}
+
+
+.slick-prev, .slick-next {
+position: relative;
+top: 10px;
+float: left;
+background-color: #000;
+}
+
+#home-sidebar{
+ margin-right: 0;
+ margin-top: 0;
+} 
+
+#home-sidebar h3 {
+color: #00752A;
+}
+
+.home-signup {
+	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+	background-color:#77d42a;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:3px solid #268a16;
+	display:block;
+	margin: 10px auto;
+	color:#fff;
+	font-family:'Acme', sans-serif;
+	font-size:15px;
+	font-weight:thin;
+	height:50px;
+	line-height:50px;
+	width:130px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #aade7c;
+}
+.home-signup:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+	background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+	background-color:#5cb811;
+}.home-signup:active {
+	position:relative;
+	top:1px;
+}
+
+/***** ABOUT PAGE ******/
+#strawberries {
+text-align: center;
+display: block;
+vertical-align: middle;
+}
+
+
+/***** CONTACT PAGE *****/
+.contact p{
+text-align: center;
+}
+
+/***** COOKBOOK *****/
+.left-side{
+float: left;
+margin-left: 0;
+}
+
+.left-side h2{
+color: #00752A; 
+}
+
+.right-side{
+float: right;
+margin-right: 0;
+text-align: center;
+}
+
+.right-side h2{
+color: #00752A; 
+}
+
+.right-side img{
+border:
+}
+
+/***** RECIPES *****/
+.recipe{
+display: block;
+position: relative;
+float: none;
+clear: both;
+}
+
+.recipe-content{
+padding-top: 20px;
+padding-bottom: 20px;
+margin-bottom: 10px;
+border-bottom: medium solid #750804;
+border-bottom-width: 85%;
+}
+
+.recipe-preview{
+padding-top: 20px;
+padding-bottom: 20px;
+margin-bottom: 10px;
+border-bottom: thin solid #750804;
+border-bottom-width: 65%;
+}
+
+.recipe-preview img, .recipe-preview p{
+display: inline-block;
+}
+
+.recipe-preview p{
+width: 60%;
+margin: auto 15px;
+vertical-align: top;
+}
+
+.recipe-preview .tags{
+text-align: left;
+margin-top: 15px;
+}
+
+.recipe h3, .recipe a{
+color: #00752A;
+text-align: left;
+}
+
+.recipe h5{
+color: #0CC24D;
+margin-top: 15px;
+}
+
+.recipe a:hover{
+color: #0CC24D;
+}
+
+.recipe ul {
+list-style-type: circle;
+}
+
+.tags{
+text-align: right;
+font-style: italic;
+}
+
